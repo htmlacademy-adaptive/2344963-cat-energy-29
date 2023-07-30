@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Shouko Nishimiya](https://up.htmlacademy.ru/adaptive/29/user/2344963).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Гущина`(https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
