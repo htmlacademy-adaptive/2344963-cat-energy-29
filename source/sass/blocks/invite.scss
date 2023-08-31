@@ -1,0 +1,21 @@
+.invite {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+.invite__title {
+  margin: 0;
+  max-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.invite__address {
+  max-width: 140px;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+  color: #444444;
+}

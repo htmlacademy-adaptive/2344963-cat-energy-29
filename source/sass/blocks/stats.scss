@@ -1,0 +1,17 @@
+.stats__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.stats__text {
+  margin: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
