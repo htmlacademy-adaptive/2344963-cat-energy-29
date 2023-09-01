@@ -1,13 +1,16 @@
 .button {
+  box-sizing: border-box;
   display: inline-block;
-  min-width: 192px;
+  min-width: 280px;
   padding: 10px 44px;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  border: 0;
+  border: none;
+  cursor: pointer;
 
   &--green {
     color: #ffffff;
@@ -19,6 +22,19 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--gray {
+    color: #444444;
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
     }
   }
 }

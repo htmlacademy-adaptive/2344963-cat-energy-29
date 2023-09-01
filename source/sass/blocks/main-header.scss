@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  padding: 13px 21px 14px 20px;
+  padding: 13px 20px 14px;
 
   &--divided {
     border-bottom: 1px solid #d9d9d9;
@@ -13,14 +14,4 @@
 .main-header__logo {
   margin-right: 65px;
   flex-grow: 1;
-}
-
-.main-header__toggle {
-  &--switched-off {
-    margin: 7px 0;
-  }
-
-  &--switched-on {
-    margin: 8px -2px 8px 0;
-  }
 }

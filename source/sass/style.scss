@@ -12,6 +12,7 @@
 @use "./blocks/list-toggle.scss";
 @use "./blocks/site-list.scss";
 // Main
+@use "./blocks/catalog-main.scss"; // main inside "catalog.html"
 // Hero
 @use "./blocks/hero.scss";
 @use "./blocks/main-title.scss";
@@ -27,6 +28,16 @@
 // Contacts
 @use "./blocks/main-contacts.scss";
 @use "./blocks/invite.scss";
+// Main Catalog
+@use "./blocks/main-catalog.scss";
+@use "./blocks/product-cards.scss";
+@use "./blocks/product-card.scss";
+@use "./blocks/product-more.scss";
+// Add Catalog
+@use "./blocks/add-catalog.scss";
+@use "./blocks/add-products.scss";
+@use "./blocks/add-product.scss";
+@use "./blocks/catalog-promo.scss";
 // Footer
 @use "./blocks/main-footer.scss";
 @use "./blocks/social.scss";
