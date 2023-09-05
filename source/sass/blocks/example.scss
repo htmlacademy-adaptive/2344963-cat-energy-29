@@ -1,6 +1,8 @@
+@use "../global/variables.scss" as v;
+
 .example {
   padding: 25px 20px 40px;
-  background-color: #eaeaea;
+  background-color: v.$third-bg;
 }
 
 .example__title {
@@ -14,8 +16,8 @@
 .example__text {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Lato", sans-serif;
-  color: #444444;
+  font-family: v.$second-font;
+  color: v.$main-text-color;
 }
 
 .example-stats {

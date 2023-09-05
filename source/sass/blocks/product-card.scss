@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .product-card {
   padding: 20px 20px 24px;
 }
@@ -10,14 +12,14 @@
 }
 
 .product-card__text-wrapper {
-  width: 140px;
+  width: 50%;
 }
 
 .product-card__caption {
   margin: 0;
   margin-top: 2px;
   margin-bottom: 14px;
-  width: 76px;
+  width: 55%;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -26,10 +28,10 @@
 
 .product-card__description {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: v.$second-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: v.$main-text-color;
   border-spacing: 0;
 
   & td {
@@ -54,4 +56,8 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.product-card__button {
+  width: 100%;
 }

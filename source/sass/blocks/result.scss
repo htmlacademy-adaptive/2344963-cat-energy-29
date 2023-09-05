@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .result {
   position: relative;
   width: 124px;
@@ -28,8 +30,8 @@
   height: 24px;
   font-size: 12px;
   line-height: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: v.$second-font;
   font-weight: normal;
-  color: #444444;
-  background-color: #eaeaea;
+  color: v.$main-text-color;
+  background-color: v.$third-bg;
 }

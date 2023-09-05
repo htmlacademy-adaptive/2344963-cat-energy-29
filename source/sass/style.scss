@@ -1,10 +1,9 @@
 // Начните писать стили здесь
 // Global
-@use "./blocks/fonts.scss";
-@use "./blocks/visually-hidden.scss";
-@use "./blocks/page.scss";
-// Buttons
-@use "./blocks/button.scss";
+@use "./global/fonts.scss";
+@use "./global/visually-hidden.scss";
+@use "./global/page.scss";
+@use "./global/button.scss";
 // Header
 @use "./blocks/main-header.scss";
 @use "./blocks/main-logo.scss";
@@ -38,6 +37,17 @@
 @use "./blocks/add-products.scss";
 @use "./blocks/add-product.scss";
 @use "./blocks/catalog-promo.scss";
+// Form
+@use "./blocks/form.scss";
+@use "./blocks/program-selection.scss";
+@use "./blocks/cat-data.scss";
+@use "./blocks/entry-field.scss";
+@use "./blocks/diet-type.scss";
+@use "./blocks/control-field.scss";
+@use "./blocks/owner-data.scss";
+@use "./blocks/fieldset-headline.scss";
+@use "./blocks/comment-data.scss";
+@use "./blocks/additives-types.scss";
 // Footer
 @use "./blocks/main-footer.scss";
 @use "./blocks/social.scss";

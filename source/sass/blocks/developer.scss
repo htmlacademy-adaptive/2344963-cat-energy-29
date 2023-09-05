@@ -1,12 +1,14 @@
+@use "../global/variables.scss" as v;
+
 .developer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #444444;
+  color: v.$main-text-color;
 
   &:hover .developer__logo {
-    fill: #68b738;
+    fill: v.$basic_bg;
   }
 
   &:active {
@@ -15,7 +17,7 @@
 }
 
 .developer__name {
-  font-family: "Lato", sans-serif;
+  font-family: v.$second-font;
   font-size: 16px;
   line-height: 20px;
 }

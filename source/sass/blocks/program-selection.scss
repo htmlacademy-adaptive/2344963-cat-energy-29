@@ -1,0 +1,22 @@
+@use "../global/variables.scss" as v;
+
+.program-selection__group {
+  margin: 0;
+}
+
+.program-selection__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 32px;
+  text-align: center;
+}
+
+.program-selection__button {
+  margin-bottom: 21px;
+}
+
+.program-selection__note {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: v.$second-font;
+}

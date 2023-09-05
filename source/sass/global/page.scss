@@ -1,3 +1,5 @@
+@use "./global/variables.scss" as v;
+
 .page {
   height: 100%;
 }
@@ -5,14 +7,14 @@
 .page__body {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   min-height: 100%;
+  margin: 0 auto;
   width: 320px;
-  font-family: "Oswald", sans-serif;
+  font-family: v.$main-font;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
-  background-color: #ffffff;
+  color: v.$color-black;
+  background-color: v.$color-white;
 }
 
 .page__main {

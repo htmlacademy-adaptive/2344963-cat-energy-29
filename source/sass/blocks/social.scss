@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +16,7 @@
   height: 22px;
 
   &:hover .social__link-image {
-    fill: #68b738;
+    fill: v.$basic_bg;
   }
 
   &:active {

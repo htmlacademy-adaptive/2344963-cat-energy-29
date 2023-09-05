@@ -1,9 +1,10 @@
+@use "../global/variables.scss" as v;
+
 .button {
   box-sizing: border-box;
   display: inline-block;
-  min-width: 280px;
   padding: 10px 44px;
-  font-family: "Oswald", sans-serif;
+  font-family: v.$main-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -13,8 +14,8 @@
   cursor: pointer;
 
   &--green {
-    color: #ffffff;
-    background-color: #68b738;
+    color: v.$color-white;
+    background-color: v.$basic_bg;
 
     &:hover {
       background-color: #5eaa2f;
@@ -26,8 +27,8 @@
   }
 
   &--gray {
-    color: #444444;
-    background-color: #f2f2f2;
+    color: v.$main-text-color;
+    background-color: v.$second-bg;
 
     &:hover {
       background-color: #ebebeb;

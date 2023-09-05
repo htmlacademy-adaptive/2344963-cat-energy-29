@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .add-product {
   padding: 13px 0 18px;
 }
@@ -13,9 +15,9 @@
 
 .add-product__description {
   width: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: v.$second-font;
   line-height: 14px;
-  color: #444444;
+  color: v.$main-text-color;
   margin-bottom: 15px;
   border-spacing: 0;
 
@@ -26,4 +28,8 @@
       text-align: right;
     }
   }
+}
+
+.add-product__button {
+  width: 100%;
 }

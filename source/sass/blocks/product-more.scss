@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .product-more {
   padding: 25px 20px 24px;
   text-align: center;
@@ -34,8 +36,12 @@
 
 .product-more__description {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: v.$second-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: v.$main-text-color;
+}
+
+.product-more__button {
+  width: 100%;
 }

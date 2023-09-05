@@ -1,11 +1,13 @@
+@use "../global/variables.scss" as v;
+
 .invite {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 26px 20px;
-  background-color: #f2f2f2;
+  background-color: v.$second-bg;
 
   &--index {
-    background-color: #ffffff;
+    background-color: v.$color-white;
   }
 }
 
@@ -21,6 +23,6 @@
 .invite__address {
   max-width: 140px;
   line-height: 20px;
-  font-family: "Lato", sans-serif;
-  color: #444444;
+  font-family: v.$second-font;
+  color: v.$main-text-color;
 }

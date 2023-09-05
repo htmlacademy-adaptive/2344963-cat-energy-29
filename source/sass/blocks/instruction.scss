@@ -1,10 +1,12 @@
+@use "../global/variables.scss" as v;
+
 .instruction {
-  padding: 0 20px 53px;
+  padding: 0 20px 49px;
 }
 
 .instruction__title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
@@ -17,23 +19,20 @@
 }
 
 .instruction__item {
-  position: relative;
-  padding-left: 80px;
-  font-family: "Lato", sans-serif;
-  color: #444444;
+  display: flex;
+  align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   &::before {
-    position: absolute;
-    top: -2px;
-    left: 0;
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
+    margin-right: 20px;
     content: "";
-    background-color: #68b738;
+    background-color: v.$basic_bg;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -44,4 +43,10 @@
       background-image: url("../../img/instruction//icon-#{$n}.svg");
     }
   }
+}
+
+.instruction__text {
+  margin: 0;
+  font-family: v.$second-font;
+  color: v.$main-text-color;
 }

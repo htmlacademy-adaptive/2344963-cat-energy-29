@@ -1,0 +1,68 @@
+@use "../global/variables.scss" as v;
+
+.entry-field {
+  position: relative;
+  display: flex;
+  gap: 13px;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.entry-field__label {
+  padding-top: 13px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: v.$main-text-color;
+}
+
+.entry-field__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 13px 15px 12px;
+  font-family: v.$main-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  &--icon {
+    padding-right: 33px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
+}
+
+.entry-field__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 12px;
+  margin: auto 0;
+
+  .entry-field__input:hover + & {
+    stroke: #222222;
+  }
+
+  .entry-field__input:focus + & {
+    stroke: v.$basic_bg;
+  }
+
+  .entry-field__input:focus:invalid + & {
+    stroke: #ff8282;
+  }
+}
