@@ -40,7 +40,7 @@
 
   @for $n from 1 to 5 {
     &:nth-child(#{$n})::before {
-      background-image: url("../../img/instruction//icon-#{$n}.svg");
+      background-image: url("../img/instruction//icon-#{$n}.svg");
     }
   }
 }

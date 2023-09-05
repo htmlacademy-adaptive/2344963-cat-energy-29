@@ -7,13 +7,13 @@
   cursor: pointer;
 
   &--switched-off {
-    background-image: url("../../img/nav-button.svg");
+    background-image: url("../img/nav-button.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &--switched-on {
-    background-image: url("../../img/nav-close-button.svg");
+    background-image: url("../img/nav-close-button.svg");
     background-position: right;
     background-repeat: no-repeat;
   }
