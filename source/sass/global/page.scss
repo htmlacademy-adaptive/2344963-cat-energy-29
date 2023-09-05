@@ -1,0 +1,22 @@
+@use "./global/variables.scss" as v;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 320px;
+  font-family: v.$main-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: v.$color-black;
+  background-color: v.$color-white;
+}
+
+.page__main {
+  flex-grow: 1;
+}

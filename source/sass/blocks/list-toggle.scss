@@ -1,0 +1,28 @@
+.list-toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--switched-off {
+    background-image: url("../img/nav-button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--switched-on {
+    background-image: url("../img/nav-close-button.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

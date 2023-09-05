@@ -1,0 +1,23 @@
+@use "../global/variables.scss" as v;
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: v.$main-text-color;
+
+  &:hover .developer__logo {
+    fill: v.$basic_bg;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__name {
+  font-family: v.$second-font;
+  font-size: 16px;
+  line-height: 20px;
+}

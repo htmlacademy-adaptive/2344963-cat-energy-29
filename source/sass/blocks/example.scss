@@ -1,0 +1,33 @@
+@use "../global/variables.scss" as v;
+
+.example {
+  padding: 25px 20px 40px;
+  background-color: v.$third-bg;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: v.$second-font;
+  color: v.$main-text-color;
+}
+
+.example-stats {
+  margin-bottom: 20px;
+}
+
+.example__compare-slider {
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  background-image: url("../img/cat-before-mobile.png");
+  background-size: contain;
+}

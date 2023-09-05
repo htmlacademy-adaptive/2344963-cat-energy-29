@@ -1,0 +1,52 @@
+@use "../global/variables.scss" as v;
+
+.instruction {
+  padding: 0 20px 49px;
+}
+
+.instruction__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.instruction__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    content: "";
+    background-color: v.$basic_bg;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  @for $n from 1 to 5 {
+    &:nth-child(#{$n})::before {
+      background-image: url("../img/instruction//icon-#{$n}.svg");
+    }
+  }
+}
+
+.instruction__text {
+  margin: 0;
+  font-family: v.$second-font;
+  color: v.$main-text-color;
+}

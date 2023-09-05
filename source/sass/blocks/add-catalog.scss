@@ -1,0 +1,38 @@
+.add-catalog {
+  padding-top: 25px;
+}
+
+.add-catalog__title-wrapper {
+  position: relative;
+  margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    height: 2px;
+    content: "";
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+.add-catalog__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  background-color: #ffffff;
+}
+
+.add-catalog__list {
+  margin: 0 20px;
+}
+
+.add-catalog__promo {
+  margin: 35px 20px;
+}

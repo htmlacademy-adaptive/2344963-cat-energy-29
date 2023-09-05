@@ -1,1 +1,54 @@
 // Начните писать стили здесь
+// Global
+@use "./global/fonts.scss";
+@use "./global/visually-hidden.scss";
+@use "./global/page.scss";
+@use "./global/button.scss";
+// Header
+@use "./blocks/main-header.scss";
+@use "./blocks/main-logo.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/list-toggle.scss";
+@use "./blocks/site-list.scss";
+// Main
+@use "./blocks/catalog-main.scss"; // main inside "catalog.html"
+// Hero
+@use "./blocks/hero.scss";
+@use "./blocks/main-title.scss";
+// Programs
+@use "./blocks/programs.scss";
+@use "./blocks/program.scss";
+// Instruction
+@use "./blocks/instruction.scss";
+// Example
+@use "./blocks/example.scss";
+@use "./blocks/stats.scss";
+@use "./blocks/result.scss";
+// Contacts
+@use "./blocks/main-contacts.scss";
+@use "./blocks/invite.scss";
+// Main Catalog
+@use "./blocks/main-catalog.scss";
+@use "./blocks/product-cards.scss";
+@use "./blocks/product-card.scss";
+@use "./blocks/product-more.scss";
+// Add Catalog
+@use "./blocks/add-catalog.scss";
+@use "./blocks/add-products.scss";
+@use "./blocks/add-product.scss";
+@use "./blocks/catalog-promo.scss";
+// Form
+@use "./blocks/form.scss";
+@use "./blocks/program-selection.scss";
+@use "./blocks/cat-data.scss";
+@use "./blocks/entry-field.scss";
+@use "./blocks/diet-type.scss";
+@use "./blocks/control-field.scss";
+@use "./blocks/owner-data.scss";
+@use "./blocks/fieldset-headline.scss";
+@use "./blocks/comment-data.scss";
+@use "./blocks/additives-types.scss";
+// Footer
+@use "./blocks/main-footer.scss";
+@use "./blocks/social.scss";
+@use "./blocks/developer.scss";
