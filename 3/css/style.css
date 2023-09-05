@@ -139,12 +139,12 @@
   cursor: pointer;
 }
 .list-toggle--switched-off {
-  background-image: url("../../img/nav-button.svg");
+  background-image: url("../img/nav-button.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 .list-toggle--switched-on {
-  background-image: url("../../img/nav-close-button.svg");
+  background-image: url("../img/nav-close-button.svg");
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -197,7 +197,7 @@
 
 .hero-bg {
   padding: 0 15px 164px;
-  background-image: url("../../img/cat-bg-mobile.jpg");
+  background-image: url("../img/cat-bg-mobile.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -259,7 +259,7 @@
   width: 50px;
   height: 53px;
   content: "";
-  background-image: url("../../img/cat-slim.svg");
+  background-image: url("../img/cat-slim.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -270,7 +270,7 @@
   width: 67px;
   height: 50px;
   content: "";
-  background-image: url("../../img/cat-pro.svg");
+  background-image: url("../img/cat-pro.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -318,7 +318,7 @@
   width: 32px;
   height: 12px;
   content: "";
-  background-image: url("../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-position: center right 8px;
   background-repeat: no-repeat;
   transition: 0.3s;
@@ -366,16 +366,16 @@
   background-repeat: no-repeat;
 }
 .instruction__item:nth-child(1)::before {
-  background-image: url("../../img/instruction//icon-1.svg");
+  background-image: url("../img/instruction//icon-1.svg");
 }
 .instruction__item:nth-child(2)::before {
-  background-image: url("../../img/instruction//icon-2.svg");
+  background-image: url("../img/instruction//icon-2.svg");
 }
 .instruction__item:nth-child(3)::before {
-  background-image: url("../../img/instruction//icon-3.svg");
+  background-image: url("../img/instruction//icon-3.svg");
 }
 .instruction__item:nth-child(4)::before {
-  background-image: url("../../img/instruction//icon-4.svg");
+  background-image: url("../img/instruction//icon-4.svg");
 }
 
 .instruction__text {
@@ -412,7 +412,7 @@
   width: 280px;
   height: 256px;
   margin: 0 auto;
-  background-image: url("../../img/cat-before-mobile.png");
+  background-image: url("../img/cat-before-mobile.png");
   background-size: contain;
 }
 
@@ -596,7 +596,7 @@
   width: 30px;
   height: 30px;
   content: "";
-  background-image: url("../../img/plus.svg");
+  background-image: url("../img/plus.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -703,7 +703,7 @@
 }
 
 .catalog-promo {
-  background-image: url("../../img/promo-bg.jpg");
+  background-image: url("../img/promo-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -728,7 +728,7 @@
   width: 78px;
   height: 81px;
   content: "";
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -911,7 +911,7 @@
 }
 
 .control-field__input[type=checkbox]:checked {
-  background: url("../../img/checkbox-tick.svg");
+  background: url("../img/checkbox-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
