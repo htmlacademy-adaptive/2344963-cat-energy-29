@@ -3,6 +3,15 @@
 .main-footer {
   padding: 20px;
   background-color: v.$second-bg;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    min-height: 37px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+  }
 }
 
 .main-footer__container {
@@ -10,8 +19,17 @@
   border-bottom: 1px solid #d9d9d9;
 
   &:last-child {
-    padding: 20px 0 20px;
+    padding: 20px 0;
     border-bottom: none;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0;
+    border-bottom: none;
+
+    &:last-child {
+      padding: 0;
+    }
   }
 }
 
@@ -28,4 +46,11 @@
 .main-footer__logo-image {
   display: block;
   margin: 0 auto;
+}
+
+.main-footer__developer {
+  @media (min-width: v.$tablet-width) {
+    padding-left: 5px;
+    width: 163px;
+  }
 }

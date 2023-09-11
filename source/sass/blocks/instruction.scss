@@ -2,6 +2,11 @@
 
 .instruction {
   padding: 0 20px 49px;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 45px 105px 46px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .instruction__title {
@@ -10,12 +15,25 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .instruction__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 249px);
+    row-gap: 37px;
+    justify-content: space-between;
+  }
 }
 
 .instruction__item {
@@ -24,6 +42,10 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: v.$tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
@@ -35,12 +57,61 @@
     background-color: v.$basic_bg;
     background-position: center;
     background-repeat: no-repeat;
-  }
 
+    @media (min-width: v.$tablet-width) {
+      position: relative;
+      z-index: 1;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
 
   @for $n from 1 to 5 {
     &:nth-child(#{$n})::before {
       background-image: url("../img/instruction//icon-#{$n}.svg");
+    }
+  }
+
+  @media (min-width: v.$tablet-width) {
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 240px;
+
+    @for $n from 1 to 5 {
+      &:nth-child(#{$n})::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "#{$n}";
+        font-family: v.$main-font;
+        font-size: 280px;
+        line-height: 280px;
+        color: v.$second-bg;
+      }
+    }
+
+    &:nth-child(1)::after {
+      right: 5px;
+    }
+
+    &:nth-child(1) {
+      width: 230px;
+    }
+
+    &:nth-child(2) {
+      width: 246px;
+    }
+
+    &:nth-child(3) {
+      width: 247px;
+    }
+
+    &:nth-child(4) {
+      width: 249px;
     }
   }
 }
@@ -49,4 +120,19 @@
   margin: 0;
   font-family: v.$second-font;
   color: v.$main-text-color;
+
+  @media (min-width: v.$tablet-width) {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: v.$tablet-width) {
+      display: initial;
+    }
+  }
 }

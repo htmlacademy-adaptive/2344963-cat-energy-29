@@ -6,6 +6,12 @@
   height: 70px;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: v.$tablet-width) {
+    width: 162px;
+    height: 77px;
+    margin-bottom: 0;
+  }
 }
 
 .result__total {
@@ -18,6 +24,14 @@
   font-weight: normal;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: v.$tablet-width) {
+    width: 160px;
+    height: 55px;
+    padding-top: 15px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__text {
@@ -26,7 +40,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 87px;
+  display: block;
   height: 24px;
   font-size: 12px;
   line-height: 12px;
@@ -34,4 +48,31 @@
   font-weight: normal;
   color: v.$main-text-color;
   background-color: v.$third-bg;
+
+  .result:nth-child(1) & {
+    width: 77px;
+    padding: 0 6px 0 4px;
+  }
+
+  .result:nth-child(2) & {
+    width: 59px;
+    padding: 0 14px 0 14px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: v.$color-white;
+
+    .result:nth-child(1) & {
+      width: 96px;
+      padding: 0 10px 0 8px;
+    }
+
+    .result:nth-child(2) & {
+      width: 125px;
+      padding: 0 9px 0 8px;
+    }
+  }
 }

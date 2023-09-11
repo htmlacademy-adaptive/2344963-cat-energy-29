@@ -1,4 +1,12 @@
+@use "../global/variables.scss" as v;
+
 .catalog-main__headline {
   margin: 0;
   margin-bottom: 20px;
+  padding: 27px 20px 20px;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 40px 30px;
+    margin-bottom: 44px;
+  }
 }

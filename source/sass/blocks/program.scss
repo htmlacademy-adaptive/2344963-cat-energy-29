@@ -5,6 +5,13 @@
   padding: 30px 20px 18px;
   background-color: v.$second-bg;
 
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 242px;
+    padding: 77px 52px 53px;
+  }
+
   &--slim {
     &::before {
       position: absolute;
@@ -13,9 +20,19 @@
       width: 50px;
       height: 53px;
       content: "";
-      background-image: url("../img/cat-slim.svg");
+      background-image: url("../img/cat-slim-mobile.svg");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-width: v.$tablet-width) {
+        top: 81px;
+        left: auto;
+        right: 63px;
+        width: 200px;
+        height: 211px;
+        background-image: url("../img/cat-slim-tablet.svg");
+        z-index: 1;
+      }
     }
   }
 
@@ -27,9 +44,19 @@
       width: 67px;
       height: 50px;
       content: "";
-      background-image: url("../img/cat-pro.svg");
+      background-image: url("../img/cat-pro-mobile.svg");
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (min-width: v.$tablet-width) {
+        top: 91px;
+        left: auto;
+        right: 29px;
+        width: 268px;
+        height: 200px;
+        background-image: url("../img/cat-pro-tablet.svg");
+        z-index: 1;
+      }
     }
   }
 }
@@ -42,12 +69,27 @@
   font-weight: 400;
   text-transform: uppercase;
 
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 24px;
+    max-width: 56%;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &--slim {
     margin-left: 70px;
+
+    @media (min-width: v.$tablet-width) {
+      margin-left: 1px;
+    }
   }
 
   &--pro {
     margin-left: 71px;
+
+    @media (min-width: v.$tablet-width) {
+      margin-left: 1px;
+    }
   }
 }
 
@@ -58,10 +100,19 @@
   font-family: v.$second-font;
   color: v.$main-text-color;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: auto;
+    max-width: 56%;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .program__link {
   position: relative;
+  align-self: flex-start;
   display: inline-block;
   padding: 4px 48px 4px 0;
   font-size: 16px;
@@ -69,6 +120,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: v.$color-black;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 4px 58px 4px 0;
+    font-size: 20px;
+    line-height: normal;
+  }
 
   &::after {
     position: absolute;

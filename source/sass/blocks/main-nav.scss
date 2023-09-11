@@ -1,20 +1,75 @@
 @use "../global/variables.scss" as v;
 
 .main-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: 1;
   background-color: v.$color-white;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 
-  &--opened {
-    display: block;
+  @media (min-width: v.$tablet-width) {
+    border: none;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-top: 14px;
+  }
+}
+
+.main-nav__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+
+    @media (min-width: v.$tablet-width) {
+      border: none;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 22px 70px 23px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: v.$color-black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 
-  &--closed {
-    display: none;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    &--current {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        content: "";
+        background-color: v.$basic_bg;
+      }
+    }
   }
 }

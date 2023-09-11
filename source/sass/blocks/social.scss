@@ -8,6 +8,10 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media (min-width: v.$tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .social__link {

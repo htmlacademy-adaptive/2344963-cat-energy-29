@@ -1,0 +1,23 @@
+@use "../global/variables.scss" as v;
+
+.compare-slider {
+  width: 280px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../img/slider/cat-before-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: v.$tablet-width) {
+    position: absolute;
+    bottom: 101px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 560px;
+    height: 512px;
+    background-image: url("../img/slider/cat-before-tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
