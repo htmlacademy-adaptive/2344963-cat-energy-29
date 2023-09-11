@@ -1,7 +1,13 @@
+@use "../global/variables.scss" as v;
+
 .programs {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-}
 
+  @media (min-width: v.$tablet-width) {
+    gap: 30px;
+    padding: 0 30px;
+  }
+}

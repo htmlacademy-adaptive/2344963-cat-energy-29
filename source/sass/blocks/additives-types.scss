@@ -1,21 +1,43 @@
+@use "../global/variables.scss" as v;
+
 .additives-types {
   padding: 0;
   padding-bottom: 35px;
   border: 0;
+
+  @media (min-width: v.$tablet-width) {
+    padding-bottom: 52px;
+  }
 }
 
 .additives-types__headline {
   margin-bottom: 34px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .additives-types__list {
   margin: 0;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 221px);
+    row-gap: 32px;
+    column-gap: 123px;
+    padding: 0 70px;
+  }
 }
 
 .additives-types__item {
   &:not(:last-child) {
     margin-bottom: 12px;
+
+    @media (min-width: v.$tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }

@@ -14,6 +14,12 @@
   text-transform: uppercase;
   color: v.$main-text-color;
 
+  @media (min-width: v.$tablet-width) {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
   &--radio:hover {
     color: #222222;
   }
@@ -29,6 +35,12 @@
   appearance: none;
   border: 1px solid#cdcdcd;
   cursor: pointer;
+
+  @media (min-width: v.$tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
 
   &:hover {
     border: 1px solid#bababa;
@@ -65,6 +77,11 @@
   content: "";
   background-color: v.$basic_bg;
   border-radius: 50%;
+
+  @media (min-width: v.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control-field__input[type="checkbox"]:checked {

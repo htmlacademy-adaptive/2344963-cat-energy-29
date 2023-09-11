@@ -1,22 +1,64 @@
 @use "../global/variables.scss" as v;
 
-.program-selection__group {
+.program-selection__cat-data {
+  margin: 0 20px 23px;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 70px 72px;
+  }
+}
+
+.program-selection__diet-type {
+  margin: 0;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 70px 65px;
+  }
+}
+
+
+.program-selection__owner-data {
   margin: 0;
 }
+
+.program-selection__comment-data {
+  margin: 0;
+}
+
+.program-selection__additives-types {
+  margin: 0;
+}
+
 
 .program-selection__button-wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 20px 32px;
   text-align: center;
+
+  @media (min-width: v.$tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 70px 60px;
+  }
 }
 
 .program-selection__button {
   margin-bottom: 21px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 0;
+    margin-right: 60px;
+    min-width: 284px;
+  }
 }
 
 .program-selection__note {
   font-size: 14px;
   line-height: 16px;
   font-family: v.$second-font;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+  }
 }

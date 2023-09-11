@@ -9,7 +9,6 @@
 @use "./blocks/main-logo.scss";
 @use "./blocks/main-nav.scss";
 @use "./blocks/list-toggle.scss";
-@use "./blocks/site-list.scss";
 // Main
 @use "./blocks/catalog-main.scss"; // main inside "catalog.html"
 // Hero
@@ -24,6 +23,7 @@
 @use "./blocks/example.scss";
 @use "./blocks/stats.scss";
 @use "./blocks/result.scss";
+@use "./blocks/compare-slider.scss";
 // Contacts
 @use "./blocks/main-contacts.scss";
 @use "./blocks/invite.scss";

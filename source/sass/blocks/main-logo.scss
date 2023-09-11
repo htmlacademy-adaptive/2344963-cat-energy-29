@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as v;
+
 .main-logo {
   display: flex;
   flex-wrap: wrap;
@@ -14,4 +16,8 @@
 
 .main-logo__image {
   margin-right: 56px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-right: 13px;
+  }
 }

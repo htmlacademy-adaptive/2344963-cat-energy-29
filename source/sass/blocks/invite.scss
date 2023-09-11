@@ -9,6 +9,11 @@
   &--index {
     background-color: v.$color-white;
   }
+
+  @media (min-width: v.$tablet-width) {
+    justify-content: space-between;
+    padding: 61px 70px;
+  }
 }
 
 .invite__title {
@@ -18,11 +23,32 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
+
+  @media (min-width: v.$tablet-width) {
+    max-width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invite__address {
   max-width: 140px;
   line-height: 20px;
   font-family: v.$second-font;
+  font-style: normal;
   color: v.$main-text-color;
+
+  & .line-breaker {
+    display: none;
+
+    @media (min-width: v.$tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: v.$tablet-width) {
+    max-width: 157px;
+    font-size: 16px;
+    text-align: end;
+  }
 }

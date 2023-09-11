@@ -1,12 +1,34 @@
+@use "../global/variables.scss" as v;
+
 .product-cards {
   padding: 0;
   list-style: none;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 324px);
+    justify-content: space-around;
+    row-gap: 60px;
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
-.product-cards__item {
-  &:not(:last-child) {
-    border-bottom: 1px solid #ebebeb;
+.product-cards__card {
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: v.$tablet-width) {
+    box-sizing: border-box;
+    min-height: 511px;
+    border-bottom: none;
+  }
+}
+
+.product-cards__more {
+  @media (min-width: v.$tablet-width) {
+    box-sizing: border-box;
+    min-height: 511px;
   }
 }

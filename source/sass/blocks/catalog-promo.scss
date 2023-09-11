@@ -1,9 +1,13 @@
 @use "../global/variables.scss" as v;
 
 .catalog-promo {
-  background-image: url("../img/promo-bg.jpg");
+  background-image: url("../img/bg/promo-bg-mobile.jpg");
   background-size: cover;
   background-position: center;
+
+  @media (min-width: v.$tablet-width) {
+    background-image: url("../img/bg/promo-bg-tablet.jpg");
+  }
 }
 
 .catalog-promo__text {
@@ -17,6 +21,13 @@
   line-height: 20px;
   color: v.$color-white;
 
+  @media (min-width: v.$tablet-width) {
+    padding: 71px 48px 69px 344px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   &::before {
     position: absolute;
     top: 58px;
@@ -26,8 +37,19 @@
     width: 78px;
     height: 81px;
     content: "";
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icon/gift-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: v.$tablet-width) {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: unset;
+      margin: auto 0;
+      width: 80px;
+      height: 83px;
+      background-image: url("../img/icon/gift-tablet.svg");
+    }
   }
 }

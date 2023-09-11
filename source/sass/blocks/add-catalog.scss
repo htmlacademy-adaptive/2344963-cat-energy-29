@@ -1,10 +1,22 @@
+@use "../global/variables.scss" as v;
+
 .add-catalog {
   padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media (min-width: v.$tablet-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
 }
 
 .add-catalog__title-wrapper {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 80px;
+  }
 
   &::before {
     position: absolute;
@@ -15,11 +27,15 @@
     height: 2px;
     content: "";
     background-color: #68b738;
-    z-index: -1;
+
+    @media (min-width: v.$tablet-width) {
+      top: 21px;
+    }
   }
 }
 
 .add-catalog__title {
+  position: relative;
   display: inline-block;
   margin: 0;
   padding: 0 20px;
@@ -27,12 +43,27 @@
   line-height: 24px;
   font-weight: normal;
   background-color: #ffffff;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0 40px;
+    margin-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .add-catalog__list {
-  margin: 0 20px;
+  margin: 0 20px 35px;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 30px 70px;
+  }
 }
 
 .add-catalog__promo {
-  margin: 35px 20px;
+  margin: 0 20px;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 30px;
+  }
 }

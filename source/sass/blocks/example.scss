@@ -3,6 +3,11 @@
 .example {
   padding: 25px 20px 40px;
   background-color: v.$third-bg;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 45px 0 0;
+    background-color: v.$color-white;
+  }
 }
 
 .example__title {
@@ -11,6 +16,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0 30px 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
@@ -18,16 +30,30 @@
   margin-bottom: 20px;
   font-family: v.$second-font;
   color: v.$main-text-color;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 0 30px 0;
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example-stats {
   margin-bottom: 20px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 250px;
+    padding: 0 30px 0;
+  }
 }
 
-.example__compare-slider {
-  width: 280px;
+.example__compare-slider-wrapper {
   height: 256px;
-  margin: 0 auto;
-  background-image: url("../img/cat-before-mobile.png");
-  background-size: contain;
+
+  @media (min-width: v.$tablet-width) {
+    position: relative;
+    height: 462px;
+    background-color: v.$third-bg;
+  }
 }
