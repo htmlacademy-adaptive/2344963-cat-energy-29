@@ -12,6 +12,10 @@
     align-items: center;
     padding: 55px 30px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__container {

@@ -14,6 +14,11 @@
     justify-content: space-between;
     padding: 61px 70px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 61px 78px 60px 80px;
+    background-color: v.$color-white;
+  }
 }
 
 .invite__title {
@@ -40,15 +45,19 @@
 
   & .line-breaker {
     display: none;
-
-    @media (min-width: v.$tablet-width) {
-      display: block;
-    }
   }
 
   @media (min-width: v.$tablet-width) {
     max-width: 157px;
     font-size: 16px;
     text-align: end;
+
+    & .line-breaker {
+      display: block;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    text-align: start;
   }
 }

@@ -4,14 +4,6 @@
   position: relative;
   display: flex;
   gap: 13px;
-
-  &:not(:last-child) {
-    margin-bottom: 14px;
-
-    @media (min-width: v.$tablet-width) {
-      margin-bottom: 20px;
-    }
-  }
 }
 
 .entry-field__label {
@@ -51,6 +43,10 @@
     @media (min-width: v.$tablet-width) {
       padding-right: 33px;
     }
+
+    @media (min-width: v.$desktop-width) {
+      padding-right: 35px;
+    }
   }
 
   &:hover {
@@ -77,6 +73,10 @@
 
   @media (min-width: v.$tablet-width) {
     right: 13px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    right: 15px;
   }
 
   .entry-field__input:hover + & {

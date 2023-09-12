@@ -9,6 +9,11 @@
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
+
+  @media (min-width: v.$desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 

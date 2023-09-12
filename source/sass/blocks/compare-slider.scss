@@ -20,4 +20,10 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: v.$desktop-width) {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
 }

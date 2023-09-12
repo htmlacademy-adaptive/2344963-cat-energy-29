@@ -9,6 +9,10 @@
     padding-top: 0;
     padding-bottom: 65px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .owner-data__headline {
@@ -27,5 +31,40 @@
   @media (min-width: v.$tablet-width) {
     padding: 0;
     margin: 0 70px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    display: flex;
+    gap: 80px;
+    margin: 0 110px;
+  }
+}
+
+.owner-data__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--email {
+      min-width: 569px;
+    }
+
+    &--phone {
+      min-width: 572px;
+    }
   }
 }

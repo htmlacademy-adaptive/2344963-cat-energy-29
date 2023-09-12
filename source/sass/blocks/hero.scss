@@ -7,6 +7,12 @@
   @media (min-width: v.$tablet-width) {
     align-items: flex-start;
   }
+
+  @media (min-width: v.$desktop-width) {
+    position: relative;
+    padding: 0 190px 52px;
+    min-height: 499px;
+  }
 }
 
 .hero__text-wrapper {
@@ -26,6 +32,14 @@
     color: v.$color-black;
     background-image: none;
   }
+
+  @media (min-width: v.$desktop-width) {
+    box-sizing: border-box;
+    padding: 81px 110px 0 0;
+    margin: 0;
+    margin-bottom: 52px;
+    width: 50%;
+  }
 }
 
 
@@ -37,6 +51,11 @@
   @media (min-width: v.$tablet-width) {
     margin-bottom: 0;
     padding: 40px 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -50,6 +69,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    width: unset;
+  }
 }
 
 .hero__image-wrapper {
@@ -62,6 +85,13 @@
     height: 526px;
     margin-bottom: 0;
   }
+
+  @media (min-width: v.$desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 499px;
+  }
 }
 
 .hero__image {
@@ -70,6 +100,10 @@
   left: 0;
   right: 0;
   margin: 0 auto;
+
+  @media (min-width: v.$desktop-width) {
+    position: static;
+  }
 }
 
 .hero__button {
@@ -79,6 +113,11 @@
     margin: 0;
     margin-left: 120px;
     max-width: 55%;
-    min-width: 192px;
+    min-width: 244px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0;
+    max-width: 46%;
   }
 }
