@@ -8,15 +8,17 @@
     padding-top: 0;
     padding-bottom: 75px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding-top: 0;
+    padding-bottom: 87px;
+  }
 }
 
 .add-catalog__title-wrapper {
   position: relative;
-  margin-bottom: 34px;
-
-  @media (min-width: v.$tablet-width) {
-    margin-bottom: 80px;
-  }
+  line-height: 0;
+  margin-bottom: 35px;
 
   &::before {
     position: absolute;
@@ -27,9 +29,22 @@
     height: 2px;
     content: "";
     background-color: #68b738;
+  }
 
-    @media (min-width: v.$tablet-width) {
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 80px;
+
+    &::before {
       top: 21px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 79px;
+
+    &::before {
+      top: 23px;
     }
   }
 }
@@ -46,9 +61,20 @@
 
   @media (min-width: v.$tablet-width) {
     padding: 0 40px;
-    margin-left: 30px;
+    margin: 0 30px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 70px;
+  }
+}
+
+.add-catalog__content-wrapper {
+  @media (min-width: v.$desktop-width) {
+    display: flex;
+    padding: 0 109px 0 111px;
   }
 }
 
@@ -58,6 +84,12 @@
   @media (min-width: v.$tablet-width) {
     margin: 0 30px 70px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 80px;
+  }
 }
 
 .add-catalog__promo {
@@ -65,5 +97,12 @@
 
   @media (min-width: v.$tablet-width) {
     margin: 0 30px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0;
+    margin-top: 1px;
+    width: 245px;
+    height: 288px;
   }
 }

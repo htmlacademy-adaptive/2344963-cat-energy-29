@@ -8,6 +8,10 @@
   @media (min-width: v.$tablet-width) {
     background-image: url("../img/bg/promo-bg-tablet.jpg");
   }
+
+  @media (min-width: v.$tablet-width) {
+    background-image: url("../img/bg/promo-bg-desktop.jpg");
+  }
 }
 
 .catalog-promo__text {
@@ -21,13 +25,6 @@
   line-height: 20px;
   color: v.$color-white;
 
-  @media (min-width: v.$tablet-width) {
-    padding: 71px 48px 69px 344px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
   &::before {
     position: absolute;
     top: 58px;
@@ -40,8 +37,15 @@
     background-image: url("../img/icon/gift-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
 
-    @media (min-width: v.$tablet-width) {
+  @media (min-width: v.$tablet-width) {
+    padding: 71px 48px 69px 344px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+
+    &::before {
       top: 0;
       bottom: 0;
       left: 0;
@@ -50,6 +54,18 @@
       width: 80px;
       height: 83px;
       background-image: url("../img/icon/gift-tablet.svg");
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 185px 42px 43px;
+    text-align: center;
+
+    &::before {
+      top: 56px;
+      left: 1px;
+      right: 0;
+      margin: 0 auto;
     }
   }
 }

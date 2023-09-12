@@ -24,6 +24,7 @@
   font-weight: normal;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  overflow: hidden;
 
   @media (min-width: v.$tablet-width) {
     width: 160px;
@@ -48,6 +49,7 @@
   font-weight: normal;
   color: v.$main-text-color;
   background-color: v.$third-bg;
+  overflow: hidden;
 
   .result:nth-child(1) & {
     width: 77px;
@@ -74,5 +76,9 @@
       width: 125px;
       padding: 0 9px 0 8px;
     }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    background-color: v.$third-bg;
   }
 }

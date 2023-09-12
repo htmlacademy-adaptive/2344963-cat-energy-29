@@ -10,3 +10,15 @@
   padding: 0;
   list-style: none;
 }
+
+.cat-data__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

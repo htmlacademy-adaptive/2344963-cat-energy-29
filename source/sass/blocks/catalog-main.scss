@@ -9,4 +9,9 @@
     padding: 40px 30px;
     margin-bottom: 44px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 45px 110px 0;
+    margin-bottom: 84px;
+  }
 }

@@ -8,6 +8,10 @@
   @media (min-width: v.$tablet-width) {
     padding-bottom: 52px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .additives-types__headline {
@@ -29,6 +33,12 @@
     row-gap: 32px;
     column-gap: 123px;
     padding: 0 70px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-template-columns: repeat(auto-fit, 221px);
+    column-gap: 104px;
+    padding: 0 110px;
   }
 }
 

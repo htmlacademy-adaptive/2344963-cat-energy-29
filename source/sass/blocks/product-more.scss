@@ -19,7 +19,7 @@
 
 .product-more__container {
   @media (min-width: v.$tablet-width) {
-    padding: 48px 35px 38px;
+    padding: 48px 36px 38px;
     border: 2px solid #f2f2f2;
   }
 }
@@ -35,6 +35,11 @@
     margin-right: auto;
     margin-bottom: 82px;
     padding: 110px 0 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 90px;
+    padding: 100px 0 0;
   }
 
   &::before {
@@ -70,6 +75,10 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 23px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 25px;
   }
 }
 

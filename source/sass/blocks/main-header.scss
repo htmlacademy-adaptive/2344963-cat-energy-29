@@ -13,10 +13,39 @@
   }
 
   @media (min-width: v.$tablet-width) {
+    align-items: unset;
     padding: 25px 33px 25px 30px;
 
     &--divided {
       border-bottom: none;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 55px 0 29px;
+
+    &--bg {
+      &::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 50%;
+        height: 694px;
+        content: "";
+        background-color: #64a73d;
+        background-image: url("../img/bg/hero-bg-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: right 0;
+      }
+
+      & .main-nav__link {
+        color: v.$color-white;
+      }
+
+      & .main-nav__link--current::after {
+        background-color: v.$color-white;
+      }
     }
   }
 }
@@ -27,6 +56,12 @@
   @media (min-width: v.$tablet-width) {
     margin-right: 98px;
     height: 50px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-right: 408px;
+    margin-left: 110px;
+    height: 59px;
   }
 }
 
@@ -55,5 +90,10 @@
   @media (min-width: v.$tablet-width) {
     position: static;
     display: block;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    box-sizing: border-box;
+    width: 50%;
   }
 }

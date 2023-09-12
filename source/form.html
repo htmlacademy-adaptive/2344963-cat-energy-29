@@ -60,95 +60,99 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <fieldset class="program-selection__cat-data cat-data">
-            <h2 class="visually-hidden">Данные кота</h2>
-            <ul class="cat-data__list">
-              <li class="cat-data__item entry-field">
-                <label class="entry-field__label" for="cat-name">ИМЯ:* </label>
-                <input
-                  class="entry-field__input"
-                  id="cat-name"
-                  name="cat-name"
-                  type="text"
-                  placeholder="Барсик"
-                  required
-                />
-              </li>
-              <li class="cat-data__item entry-field">
-                <label class="entry-field__label" for="cat-weight"
-                  >Вес (кг):*</label
-                >
-                <input
-                  class="entry-field__input"
-                  id="cat-weight"
-                  name="cat-weight"
-                  type="text"
-                  placeholder="7"
-                  required
-                />
-              </li>
-              <li class="entry-field__item entry-field">
-                <label class="entry-field__label" for="cat-age"
-                  >Возраст (лет):</label
-                >
-                <input
-                  class="entry-field__input"
-                  id="cat-age"
-                  name="cat-age"
-                  type="text"
-                  placeholder="7"
-                />
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="program-selection__diet-type diet-type">
-            <h2 class="visually-hidden">Диета кота</h2>
-            <ul class="diet-type__list">
-              <li class="diet-type__item control-field">
-                <input
-                  class="control-field__input"
-                  id="slimming"
-                  value="slimming"
-                  name="diet-type"
-                  type="radio"
-                  checked
-                />
-                <label
-                  class="control-field__label control-field__label--radio"
-                  for="slimming"
-                  >похудение</label
-                >
-              </li>
-              <li class="diet-type__item control-field">
-                <input
-                  class="control-field__input"
-                  id="weight-gain"
-                  value="weight-gain"
-                  name="diet-type"
-                  type="radio"
-                />
-                <label
-                  class="control-field__label control-field__label--radio"
-                  for="weight-gain"
-                  >Набор массы</label
-                >
-              </li>
-              <li class="diet-type__item control-field">
-                <input
-                  class="control-field__input"
-                  id="indeterminate"
-                  value="indeterminate"
-                  name="diet-type"
-                  type="radio"
-                />
-                <label
-                  class="control-field__label control-field__label--radio"
-                  for="indeterminate"
-                  >Не знаю (Нужен ваш совет)</label
-                >
-              </li>
-            </ul>
-          </fieldset>
+          <div class="program-selection__wrapper">
+            <fieldset class="program-selection__cat-data cat-data">
+              <h2 class="visually-hidden">Данные кота</h2>
+              <ul class="cat-data__list">
+                <li class="cat-data__item entry-field">
+                  <label class="entry-field__label" for="cat-name"
+                    >ИМЯ:*
+                  </label>
+                  <input
+                    class="entry-field__input"
+                    id="cat-name"
+                    name="cat-name"
+                    type="text"
+                    placeholder="Барсик"
+                    required
+                  />
+                </li>
+                <li class="cat-data__item entry-field">
+                  <label class="entry-field__label" for="cat-weight"
+                    >Вес (кг):*</label
+                  >
+                  <input
+                    class="entry-field__input"
+                    id="cat-weight"
+                    name="cat-weight"
+                    type="text"
+                    placeholder="7"
+                    required
+                  />
+                </li>
+                <li class="entry-field__item entry-field">
+                  <label class="entry-field__label" for="cat-age"
+                    >Возраст (лет):</label
+                  >
+                  <input
+                    class="entry-field__input"
+                    id="cat-age"
+                    name="cat-age"
+                    type="text"
+                    placeholder="7"
+                  />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="program-selection__diet-type diet-type">
+              <h2 class="visually-hidden">Диета кота</h2>
+              <ul class="diet-type__list">
+                <li class="diet-type__item control-field">
+                  <input
+                    class="control-field__input"
+                    id="slimming"
+                    value="slimming"
+                    name="diet-type"
+                    type="radio"
+                    checked
+                  />
+                  <label
+                    class="control-field__label control-field__label--radio"
+                    for="slimming"
+                    >похудение</label
+                  >
+                </li>
+                <li class="diet-type__item control-field">
+                  <input
+                    class="control-field__input"
+                    id="weight-gain"
+                    value="weight-gain"
+                    name="diet-type"
+                    type="radio"
+                  />
+                  <label
+                    class="control-field__label control-field__label--radio"
+                    for="weight-gain"
+                    >Набор массы</label
+                  >
+                </li>
+                <li class="diet-type__item control-field">
+                  <input
+                    class="control-field__input"
+                    id="indeterminate"
+                    value="indeterminate"
+                    name="diet-type"
+                    type="radio"
+                  />
+                  <label
+                    class="control-field__label control-field__label--radio"
+                    for="indeterminate"
+                    >Не знаю (Нужен ваш совет)</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="program-selection__owner-data owner-data">
             <div class="owner-data__headline fieldset-headline">
               <h2 class="fieldset-headline__text">
@@ -156,7 +160,7 @@
               </h2>
             </div>
             <ul class="owner-data__list">
-              <li class="owner-data__item entry-field">
+              <li class="owner-data__item owner-data__item--email entry-field">
                 <label class="entry-field__label" for="email">E-mail:*</label>
                 <input
                   class="entry-field__input entry-field__input--icon"
@@ -182,7 +186,7 @@
                   />
                 </svg>
               </li>
-              <li class="owner-data__item entry-field">
+              <li class="owner-data__item owner-data__item--phone entry-field">
                 <label class="entry-field__label" for="phone">Телефон:*</label>
                 <input
                   class="entry-field__input entry-field__input--icon"

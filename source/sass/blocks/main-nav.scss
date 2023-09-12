@@ -8,6 +8,11 @@
   @media (min-width: v.$tablet-width) {
     border: none;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 16px 110px 0 133px;
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
@@ -20,6 +25,11 @@
     flex-wrap: wrap;
     gap: 33px;
     margin-top: 14px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -47,17 +57,7 @@
     padding: 0 0 8px 0;
     font-size: 18px;
     line-height: 24px;
-  }
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: v.$tablet-width) {
     &--current {
       position: relative;
 
@@ -71,5 +71,18 @@
         background-color: v.$basic_bg;
       }
     }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

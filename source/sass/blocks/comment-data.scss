@@ -8,6 +8,10 @@
   @media (min-width: v.$tablet-width) {
     padding-bottom: 65px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .comment-data__headline {
@@ -15,6 +19,10 @@
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: 87px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 78px;
   }
 }
 
@@ -25,6 +33,10 @@
   @media (min-width: v.$tablet-width) {
     height: 175px;
     padding: 0 70px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0 110px;
   }
 }
 
