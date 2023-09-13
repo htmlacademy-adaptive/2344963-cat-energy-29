@@ -2,8 +2,6 @@
 
 .main-logo {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 
   &:hover {
     opacity: 0.8;
@@ -19,5 +17,18 @@
 
   @media (min-width: v.$tablet-width) {
     margin-right: 13px;
+  }
+}
+
+.main-logo__text {
+  height: 38px;
+
+  @media (min-width: v.$tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 118px;
+    height: 59px;
   }
 }

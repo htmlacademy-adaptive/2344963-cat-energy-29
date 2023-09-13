@@ -5,12 +5,24 @@
   background-size: cover;
   background-position: center;
 
-  @media (min-width: v.$tablet-width) {
-    background-image: url("../img/bg/promo-bg-tablet.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/promo-bg-mobile@2x.jpg");
   }
 
   @media (min-width: v.$tablet-width) {
+    background-image: url("../img/bg/promo-bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/promo-bg-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
     background-image: url("../img/bg/promo-bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/promo-bg-desktop@2x.jpg");
+    }
   }
 }
 
