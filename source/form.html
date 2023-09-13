@@ -5,21 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header main-header--divided">
       <a class="main-header__logo main-logo" href="index.html">
-        <img
-          class="main-logo__image"
-          src="img/main-logo-mobile.svg"
-          width="33"
-          height="38"
-          alt="логотип cat energy с изображением кота супер героя"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            width="70"
+            height="59"
+            srcset="img/logo/main-logo-desktop.svg" />
+          <source
+            media="(min-width: 768px)"
+            width="60"
+            height="50"
+            srcset="img/logo/main-logo-tablet.svg" />
+          <img
+            class="main-logo__image"
+            src="img/logo/main-logo-mobile.svg"
+            width="33"
+            height="38"
+            alt="логотип cat energy с изображением кота супер героя"
+        /></picture>
         <img
           class="main-logo__text"
-          src="img/main-logo-text-mobile.svg"
+          src="img/logo/main-logo-text-mobile.svg"
           width="101"
           height="18"
           alt="логотип cat energy текст"
@@ -303,13 +318,31 @@
           </address>
         </div>
         <div class="main-contacts__map">
-          <img
-            class="main-contacts__map-image"
-            src="img/map/map-mobile.png"
-            width="320"
-            height="362"
-            alt="Карта с адресом Cat Energy."
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="1440"
+              height="400"
+              srcset="
+                ./img/map/map-desktop.png    1x,
+                ./img/map/map-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              width="768"
+              height="400"
+              srcset="img/map/map-tablet.png 1x, ./img/map/map-tablet@2x.png 2x"
+            />
+            <img
+              class="main-contacts__map-image"
+              src="img/map/map-mobile.png"
+              width="320"
+              height="362"
+              srcset="img/map/map-mobile@2x.png 2x"
+              alt="Карта с адресом Cat Energy"
+            />
+          </picture>
         </div>
       </section>
     </main>

@@ -19,9 +19,13 @@
   padding: 0 15px 164px;
   text-align: center;
   color: v.$color-white;
-  background-image: url("../img/cat-bg-mobile.jpg");
+  background-image: url("../img/bg/cat-bg-mobile.jpg");
   background-size: cover;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/cat-bg-mobile@2x.jpg");
+  }
 
   @media (min-width: v.$tablet-width) {
     padding: 0;
@@ -34,6 +38,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    z-index: 1;
     box-sizing: border-box;
     padding: 81px 110px 0 0;
     margin: 0;
@@ -83,14 +88,18 @@
   @media (min-width: v.$tablet-width) {
     order: 1;
     height: 526px;
+    width: 100%;
     margin-bottom: 0;
   }
 
   @media (min-width: v.$desktop-width) {
     position: absolute;
+    right: 331px;
+    left: 557px;
     top: 0;
-    right: 0;
+    margin: 0 auto;
     height: 499px;
+    width: 552px;
   }
 }
 
@@ -110,6 +119,8 @@
   margin: 0 20px;
 
   @media (min-width: v.$tablet-width) {
+    position: static;
+    z-index: 1;
     margin: 0;
     margin-left: 120px;
     max-width: 55%;
@@ -117,6 +128,8 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    position: static;
+    z-index: 1;
     margin: 0;
     max-width: 46%;
   }
