@@ -9,6 +9,20 @@
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/wolf2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/wolf2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -30,6 +44,7 @@
             src="img/logo/main-logo-mobile.svg"
             width="33"
             height="38"
+            loading="lazy"
             alt="логотип cat energy с изображением кота супер героя"
         /></picture>
         <img
@@ -37,16 +52,21 @@
           src="img/logo/main-logo-text-mobile.svg"
           width="101"
           height="18"
+          loading="lazy"
           alt="логотип cat energy текст"
         />
       </a>
+      <!-- &--switched-on изменяет состояние toggle для отрисованого меню навигации
+           &--switched-off изменяет состояние toogle для скрытого меню навигации-->
       <button
-        class="main-header__toggle list-toggle list-toggle--switched-off"
+        class="main-header__toggle list-toggle list-toggle--switched-on"
         type="button"
       >
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-header__nav main-header__nav--closed main-nav">
+      <!-- &--closed состояние навигации скрыто
+           &--opened состояние навигации отображается на странице-->
+      <nav class="main-header__nav main-header__nav--opened main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html"
@@ -125,6 +145,7 @@
               src="img/content/index-can-mobile.png"
               width="280"
               height="270"
+              loading="lazy"
               srcset="img/content/index-can-mobile@2x.png 2x"
               alt="Банка еды Cat Energy Pro со вкусом курицы"
             />
@@ -282,6 +303,7 @@
               src="img/map/map-mobile.png"
               width="320"
               height="362"
+              loading="lazy"
               srcset="img/map/map-mobile@2x.png 2x"
               alt="Карта с адресом Cat Energy"
             />
