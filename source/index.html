@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/180.png" />
@@ -72,7 +72,35 @@
         </div>
         <div class="hero__image-wrapper">
           <picture>
-            <source type="image/webp" srcset="img/content/index-can-mobile.webp 1x, img/content/index-can-mobile@2x.webp 2x">
+            <source
+              media="(min-width: 1440px)"
+              type="image/webp"
+              width="552"
+              height="499"
+              srcset="
+                img/content/index-can-desktop.webp    1x,
+                img/content/index-can-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              width="709"
+              height="609"
+              srcset="
+                img/content/index-can-tablet.webp    1x,
+                img/content/index-can-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              width="280"
+              height="270"
+              srcset="
+                img/content/index-can-mobile.webp    1x,
+                img/content/index-can-mobile@2x.webp 2x
+              "
+            />
 
             <source
               media="(min-width: 1440px)"
@@ -180,7 +208,25 @@
           </p>
         </div>
         <div class="example__compare-slider-wrapper">
-          <div class="compare-slider"></div>
+          <div class="compare-slider">
+            <h3 class="visually-hidden">Слайдер с примерами до и после.</h3>
+            <div class="compare-slider__example-before"></div>
+            <div class="compare-slider__example-after"></div>
+            <button class="compare-slider__button" type="button">
+              <span class="visually-hidden">Ползунок слайдера.</span>
+              <svg
+                class="compare-slider__button-image"
+                width="40"
+                height="40"
+                color="#666"
+                fill="#666"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="img/sprite.svg#slider-button"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="main-contacts">
@@ -191,27 +237,45 @@
             к сотрудничеству дилеров!
           </h3>
           <address class="invite__address">
-            ул. Большая Конюшенная, д. 19/8
-            <p class="line-breaker"></p>
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </address>
         </div>
         <div class="main-contacts__map">
           <picture>
             <source
               media="(min-width: 1440px)"
+              type="image/webp"
               width="1440"
               height="400"
               srcset="
-                ./img/map/map-desktop.png    1x,
-                ./img/map/map-desktop@2x.png 2x
+                img/map/map-desktop.webp    1x,
+                img/map/map-desktop@2x.webp 2x
               "
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              width="768"
+              height="400"
+              srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              width="320"
+              height="362"
+              srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              width="1440"
+              height="400"
+              srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x"
             />
             <source
               media="(min-width: 768px)"
               width="768"
               height="400"
-              srcset="img/map/map-tablet.png 1x, ./img/map/map-tablet@2x.png 2x"
+              srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x"
             />
             <img
               class="main-contacts__map-image"

@@ -1,29 +1,115 @@
 @use "../global/variables.scss" as v;
 
 .compare-slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
   width: 280px;
   height: 100%;
-  margin: 0 auto;
-  background-image: url("../img/slider/cat-before-mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 
   @media (min-width: v.$tablet-width) {
-    position: absolute;
     bottom: 101px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     width: 560px;
     height: 512px;
-    background-image: url("../img/slider/cat-before-tablet.png");
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   @media (min-width: v.$desktop-width) {
     position: static;
     height: 100%;
     width: 100%;
+  }
+}
+
+.compare-slider__example-before {
+  height: 100%;
+  width: 50%;
+  background-image: url("../img/slider/cat-before-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 100%;
+  background-position: left;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-before-mobile@2x.png");
+  }
+
+  @media (min-width: v.$tablet-width) {
+    background-image: url("../img/slider/cat-before-tablet.png");
+    background-size: 560px 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-before-tablet@2x.png");
+    }
+  }
+}
+
+.compare-slider__example-after {
+  height: 100%;
+  width: 50%;
+  background-image: url("../img/slider/cat-after-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 100%;
+  background-position: right;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-after-mobile@2x.png");
+  }
+
+  @media (min-width: v.$tablet-width) {
+    background-size: 560px 100%;
+    background-image: url("../img/slider/cat-after-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-after-tablet@2x.png");
+    }
+  }
+}
+
+
+.compare-slider__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin: auto;
+    width: 4px;
+    content: "";
+    border-radius: 2px;
+    background-color: #666666;
+  }
+
+  &:hover {
+    &::after {
+      background-color: #68b738;
+    }
+
+    & .compare-slider__button-image {
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    &::after {
+      background-color: #5eaa2f;
+    }
+
+    & .compare-slider__button-image {
+      color: #5eaa2f;
+    }
   }
 }

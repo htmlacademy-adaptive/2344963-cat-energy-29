@@ -71,10 +71,10 @@
 }
 
 .example__compare-slider-wrapper {
+  position: relative;
   height: 256px;
 
   @media (min-width: v.$tablet-width) {
-    position: relative;
     height: 462px;
     background-color: v.$third-bg;
   }

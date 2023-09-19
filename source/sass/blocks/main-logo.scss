@@ -2,6 +2,15 @@
 
 .main-logo {
   display: flex;
+  height: 38px;
+
+  @media (min-width: v.$tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    height: 59px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -21,14 +30,14 @@
 }
 
 .main-logo__text {
-  height: 38px;
+  margin: 10px 0;
 
   @media (min-width: v.$tablet-width) {
-    height: 50px;
+    margin: 16px 0;
   }
 
   @media (min-width: v.$desktop-width) {
+    margin: 19px 0;
     width: 118px;
-    height: 59px;
   }
 }
