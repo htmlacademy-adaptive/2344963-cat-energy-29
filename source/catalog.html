@@ -9,6 +9,20 @@
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/wolf2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/wolf2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -30,6 +44,7 @@
             src="img/logo/main-logo-mobile.svg"
             width="33"
             height="38"
+            loading="lazy"
             alt="логотип cat energy с изображением кота супер героя"
         /></picture>
         <img
@@ -40,13 +55,17 @@
           alt="логотип cat energy текст"
         />
       </a>
+      <!-- &--switched-on изменяет состояние toggle для отрисованого меню навигации
+           &--switched-off изменяет состояние toogle для скрытого меню навигации-->
       <button
-        class="main-header__toggle list-toggle list-toggle--switched-off"
+        class="main-header__toggle list-toggle list-toggle--switched-on"
         type="button"
       >
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-header__nav main-header__nav--closed main-nav">
+      <!-- &--closed состояние навигации скрыто
+           &--opened состояние навигации отображается на странице-->
+      <nav class="main-header__nav main-header__nav--opened main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">главная</a>
@@ -140,6 +159,7 @@
                       src="img/products/product-1.png"
                       width="68"
                       height="86"
+                      loading="lazy"
                       srcset="img/products/product-1@2x.png 2x"
                       alt="банка еды Cat Energy PRO 500 г с курицей"
                   /></picture>
@@ -221,6 +241,7 @@
                       src="img/products/product-2.png"
                       width="84"
                       height="100"
+                      loading="lazy"
                       srcset="img/products/product-2@2x.png 2x"
                       alt="банка еды Cat Energy PRO 1000 г с курицей"
                   /></picture>
@@ -302,6 +323,7 @@
                       src="img/products/product-3.png"
                       width="68"
                       height="78"
+                      loading="lazy"
                       srcset="img/products/product-3@2x.png 2x"
                       alt="банка еды Cat Energy PRO 500 г с рыбой"
                   /></picture>
@@ -383,6 +405,7 @@
                       src="img/products/product-4.png"
                       width="84"
                       height="100"
+                      loading="lazy"
                       srcset="img/products/product-4@2x.png 2x"
                       alt="банка еды Cat Energy PRO 1000 г с рыбой"
                   /></picture>
@@ -464,6 +487,7 @@
                       src="img/products/product-5.png"
                       width="68"
                       height="78"
+                      loading="lazy"
                       srcset="img/products/product-5@2x.png 2x"
                       alt="банка еды Cat Energy SLIM 500 г с гречкой"
                   /></picture>
@@ -544,6 +568,7 @@
                       src="img/products/product-6.png"
                       width="84"
                       height="100"
+                      loading="lazy"
                       srcset="img/products/product-6@2x.png 2x"
                       alt="банка еды Cat Energy SLIM 1000 г с гречкой"
                   /></picture>
@@ -625,6 +650,7 @@
                       src="img/products/product-7.png"
                       width="68"
                       height="86"
+                      loading="lazy"
                       srcset="img/products/product-7@2x.png 2x"
                       alt="банка еды Cat Energy SLIM 500 г с рисом"
                   /></picture>
@@ -790,6 +816,7 @@
               src="img/map/map-mobile.png"
               width="320"
               height="362"
+              loading="lazy"
               srcset="img/map/map-mobile@2x.png 2x"
               alt="Карта с адресом Cat Energy"
             />
