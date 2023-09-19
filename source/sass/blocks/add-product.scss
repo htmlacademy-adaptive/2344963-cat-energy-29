@@ -1,24 +1,20 @@
 @use "../global/variables.scss" as v;
 
 .add-product {
+  box-sizing: border-box;
   padding: 13px 0 18px;
-
-  &:first-child {
-    padding-top: 12px;
-  }
+  min-height: 130px;
 
   @media (min-width: v.$tablet-width) {
     padding: 26px 37px 27px;
-
-    &:first-child {
-      padding-top: 25px;
-    }
+    min-height: 139px;
   }
 
   @media (min-width: v.$desktop-width) {
     display: flex;
     align-items: center;
     gap: 40px;
+    min-height: 72px;
     padding: 15px 0 16px;
 
     &:first-child {
