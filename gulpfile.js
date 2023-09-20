@@ -23,13 +23,12 @@ export const styles = () => {
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
-    .pipe(gulp.dest("source/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp
     .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -38,20 +37,20 @@ const html = () => {
 
 // Images
 
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
 // WebP
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(
@@ -64,14 +63,14 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () => {
+export const svg = () => {
   return gulp
     .src(["source/img/**/*.svg", "!source/img/inline-icons/*.svg"])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
 };
 
-const sprite = () => {
+export const sprite = () => {
   return gulp
     .src("source/img/inline-icons/*.svg")
     .pipe(svgo())
@@ -86,7 +85,7 @@ const sprite = () => {
 
 // Copy
 
-const copy = (done) => {
+export const copy = (done) => {
   return gulp
     .src(
       [
@@ -102,13 +101,13 @@ const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return deleteAsync("build");
 };
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: "build",
@@ -122,14 +121,14 @@ const server = (done) => {
 
 // Reload
 
-const reload = (done) => {
+export const reload = (done) => {
   browser.reload();
   done();
 };
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
