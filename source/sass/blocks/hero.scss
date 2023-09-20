@@ -19,6 +19,7 @@
   padding: 0 15px 164px;
   text-align: center;
   color: v.$color-white;
+  background-color: #62a53b;
   background-image: url("../img/bg/cat-bg-mobile.jpg");
   background-size: cover;
   background-position: center;
@@ -35,6 +36,7 @@
     text-align: left;
     color: v.$color-black;
     background-image: none;
+    background-color: transparent;
   }
 
   @media (min-width: v.$desktop-width) {
