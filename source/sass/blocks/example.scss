@@ -56,17 +56,15 @@
   }
 }
 
-.example-stats {
+.example__stats {
   margin-bottom: 20px;
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: 250px;
-    padding: 0 30px 0;
   }
 
   @media (min-width: v.$desktop-width) {
     margin-bottom: 0;
-    padding: 0 897px 0 110px;
   }
 }
 

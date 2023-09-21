@@ -35,6 +35,7 @@
 
   @media (min-width: v.$desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     margin: 0 110px;
   }

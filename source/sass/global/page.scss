@@ -2,7 +2,7 @@
 
 .page {
   height: 100%;
-  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 .page__body {
@@ -10,7 +10,7 @@
   flex-direction: column;
   min-height: 100%;
   min-width: 320px;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   font-family: v.$main-font;
   font-size: 14px;

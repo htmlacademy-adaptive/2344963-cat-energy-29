@@ -5,13 +5,44 @@
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    position: relative;
+    top: 14px;
+    display: block;
+    width: 100%;
+  }
+
   @media (min-width: v.$tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
     border: none;
+
+    &--nojs {
+      position: static;
+      top: unset;
+    }
   }
 
   @media (min-width: v.$desktop-width) {
     padding: 16px 110px 0;
     background-color: transparent;
+
+    &--white-text .main-nav__link {
+      color: v.$color-white;
+
+      &::after {
+        background-color: v.$color-white;
+      }
+    }
   }
 }
 

@@ -18,6 +18,10 @@
     background-repeat: no-repeat;
   }
 
+  &--nojs {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
